@@ -4,8 +4,13 @@ __author__ = 'Greg Albrecht <gba@splunk.com>'
 __copyright__ = 'Copyright 2012 Splunk, Inc.'
 __license__ = 'Apache License 2.0'
 
+import sys
 
-import ConfigParser
+if sys.version_info[0] == 3:
+    import configparser as ConfigParser
+else:
+    import ConfigParser
+
 import os
 
 
