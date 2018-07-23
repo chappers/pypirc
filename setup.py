@@ -16,7 +16,7 @@ def read_readme():
 
 setuptools.setup(
     name='pypirc-chappers',
-    version='1.0.4',
+    version='1.0.6',
     description='PyPiRC: .pypirc Manager',
     long_description=read_readme(),
     author='Greg Albrecht',
@@ -26,6 +26,7 @@ setuptools.setup(
     url='https://github.com/chappers/pypirc',
     license='Apache License 2.0',
     packages=setuptools.find_packages(exclude=('tests', 'docs')),
+    install_requires=['future'],
     setup_requires=['nose'],
     tests_require=['nose', 'mock', 'coverage'],
     test_suite='tests',

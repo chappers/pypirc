@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 """PyPiRC CLI Client"""
+from __future__ import print_function
+
 __author__ = 'Greg Albrecht <gba@splunk.com>'
 __copyright__ = 'Copyright 2012 Splunk, Inc.'
 __license__ = 'Apache License 2.0'
-
 
 import optparse
 import pprint
@@ -49,7 +50,7 @@ def main():
     if myrc.servers:
         pprint.pprint(myrc.servers)
     else:
-        print '.pypirc Empty!'
+        print('.pypirc Empty!')
 
 
 if __name__ == '__main__':
