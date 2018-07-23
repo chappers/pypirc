@@ -8,7 +8,7 @@ Installation
 
 Install from 'the' pypi::
 
-    pip install pypirc
+    pip install pypirc-chappers
 
 
 Usage Example
