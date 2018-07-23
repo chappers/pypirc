@@ -13,3 +13,4 @@ output.xml
 flake8.log
 
 .vscode/
+.eggs/

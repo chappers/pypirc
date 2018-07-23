@@ -1,5 +1,7 @@
 pypirc Management Client
 
+This is hopefully a temporary fork as the official project looks dead.
+
 
 Installation
 ============
@@ -23,13 +25,21 @@ Add a pypi server::
 
 Source
 ======
-https://github.com/ampledata/pypirc
+
+Official: https://github.com/ampledata/pypirc
+
+Chappers: https://github.com/chappers/pypirc
 
 Author
 ======
 Greg Albrecht gba@splunk.com
 
 http://ampledata.org/
+
+Unofficial
+==========
+
+Chapman Siu chapm0n.siu@gmail.com
 
 
 Copyright
