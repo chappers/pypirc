@@ -49,7 +49,7 @@ def main():
     if myrc.servers:
         pprint.pprint(myrc.servers)
     else:
-        print '.pypirc Empty!'
+        print('.pypirc Empty!')
 
 
 if __name__ == '__main__':

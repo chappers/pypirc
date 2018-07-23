@@ -11,6 +11,7 @@ if sys.version_info[0] == 3:
 else:
     import ConfigParser
 
+from future.utils import iteritems
 import os
 
 
@@ -61,15 +62,20 @@ class PyPiRC(object):
 
     def save(self):
         """Saves pypirc file with new configuration information."""
-        for server, conf in self.servers.iteritems():
+        for server, conf in iteritems(self.servers):
             self._add_index_server()
-            for conf_k, conf_v in conf.iteritems():
+            for conf_k, conf_v in iteritems(conf):
                 if not self.conf.has_section(server):
                     self.conf.add_section(server)
                 self.conf.set(server, conf_k, conf_v)
 
-        with open(self.rc_file, 'wb') as configfile:
-            self.conf.write(configfile)
+        if sys.version_info[0] == 3:
+            # for python3
+            with open(self.rc_file, 'w') as configfile:
+                self.conf.write(configfile)
+        else:
+            with open(self.rc_file, 'wb') as configfile:
+                self.conf.write(configfile)
         self.conf.read(self.rc_file)
 
     def _get_index_servers(self):
