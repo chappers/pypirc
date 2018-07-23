@@ -15,13 +15,15 @@ def read_readme():
 
 
 setuptools.setup(
-    name='pypirc',
+    name='pypirc-chappers',
     version='1.0.4',
     description='PyPiRC: .pypirc Manager',
     long_description=read_readme(),
     author='Greg Albrecht',
     author_email='gba@splunk.com',
-    url='https://github.com/ampledata/pypirc',
+    maintainer="Chapman Siu",
+    maintainer_email="chapm0n.siu@gmail.com"
+    url='https://github.com/chappers/pypirc',
     license='Apache License 2.0',
     packages=setuptools.find_packages(exclude=('tests', 'docs')),
     setup_requires=['nose'],

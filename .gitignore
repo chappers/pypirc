@@ -11,3 +11,5 @@ doctest_pypi.cfg
 pylint.log
 output.xml
 flake8.log
+
+.vscode/
