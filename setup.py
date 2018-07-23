@@ -22,7 +22,7 @@ setuptools.setup(
     author='Greg Albrecht',
     author_email='gba@splunk.com',
     maintainer="Chapman Siu",
-    maintainer_email="chapm0n.siu@gmail.com"
+    maintainer_email="chapm0n.siu@gmail.com",
     url='https://github.com/chappers/pypirc',
     license='Apache License 2.0',
     packages=setuptools.find_packages(exclude=('tests', 'docs')),
