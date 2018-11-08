@@ -45,11 +45,11 @@ def main():
 
         if options.password:
             server['password'] = options.password
-
+        
         myrc.servers[options.server] = server
         myrc.save()
     
-    if not myrc.quiet:
+    if not options.quiet:
         pass
     elif myrc.servers:
         pprint.pprint(myrc.servers)
