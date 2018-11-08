@@ -24,6 +24,8 @@ def main():
         '-u', '--username', help='User Name', metavar='USERNAME')
     parser.add_option(
         '-p', '--password', help='Password', metavar='PASSWORD')
+    parser.add_option(
+        '-q', '--quiet', help='Quiet mode', default=True, action='store_false')
 
     options, _ = parser.parse_args()
 
@@ -46,8 +48,10 @@ def main():
 
         myrc.servers[options.server] = server
         myrc.save()
-
-    if myrc.servers:
+    
+    if not myrc.quiet:
+        pass
+    elif myrc.servers:
         pprint.pprint(myrc.servers)
     else:
         print('.pypirc Empty!')
