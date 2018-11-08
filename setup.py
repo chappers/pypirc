@@ -16,7 +16,7 @@ def read_readme():
 
 setuptools.setup(
     name='pypirc-chappers',
-    version='1.0.7',
+    version='1.0.8',
     description='PyPiRC: .pypirc Manager',
     long_description=read_readme(),
     author='Greg Albrecht',
